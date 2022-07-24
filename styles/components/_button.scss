@@ -1,0 +1,70 @@
+@import '../abstract/variables';
+@import '../components/home';
+
+.pagination__home {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3.25em;
+
+  .pagination__icons {
+  height: 0.75em;
+  width: 0.75em;
+
+  background-color: $white;
+
+  border: 1px solid $black;
+  border-radius: 50%;
+
+  margin: 0 0.4em;
+  }
+}
+
+.home__page--buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .home__button--green {
+    background: $light-green;
+    color: $white;
+    
+    font-size: 18px;
+    font-family: $standard-font;
+    font-weight: 500;
+    
+    width: 100%;
+    
+    border: none;
+    box-shadow: 0px 4px 10px #A1C3FC;
+
+    padding: 0.75em 0;
+    margin: 0 auto;
+  }
+
+  .home__button--continue-page-1 {
+    &:active {
+      .home__page-one {
+        display: none;
+      }
+
+      .home__page-two {
+        display: block;
+      }
+
+      .home__page-three {
+        display: none;
+      }
+    }
+  }
+
+  .home__button--skip {
+    color: $light-green;
+    text-decoration: none;
+
+    margin-top: 2em;
+  }
+
+  .home__button--get-started {
+    
+  }
+}
