@@ -2,6 +2,9 @@
 
 .home__page {
   padding: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   
   .home__image {
@@ -31,8 +34,10 @@
   
   .pagination__home {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin-bottom: 3.93em;
+    justify-self: center;
+    width: 22.21%;
     
     .pagination__icons {
       height: 10px;
@@ -42,8 +47,6 @@
       
       border: 1px solid $black;
       border-radius: 50%;
-      
-      margin: 0 0.4em;
     }
     .page-active {
       background-color: $light-green;
@@ -51,40 +54,65 @@
     }
   }
   
-  .home__page--buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+}
+
+.home__page--buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  
+  .home__button--green-container {
+    width: 100%;
     
-    .home__button--green-container {
+    .home__button--green {
       width: 100%;
       
-      .home__button--green {
-        width: 100%;
-        
-        background: $light-green;
-        color: $white;
-        background: $light-green;
-        
-        font-size: 18px;
-        font-family: $standard-font;
-        font-weight: 500;
-        
-        border: none;
-        
-        padding: 0.75em 0;
-        
-        cursor: pointer;        
-      }
+      background: $light-green;
+      color: $white;
+      background: $light-green;
+      
+      font-size: 18px;
+      font-family: $standard-font;
+      font-weight: 500;
+      
+      border: none;
+      
+      padding: 0.75em 0;
+      
+      cursor: pointer;        
     }
   }
-  
-  .home__button--skip {
-    color: $light-green;
-    text-decoration: none;
-    
-    font-size: 18px;
-    margin-top: 2.3em;
-  }
 }
+
+.home__button--skip {
+  color: $light-green;
+  text-decoration: none;
+  
+  font-size: 18px;
+  margin-top: 2.3em;
+}
+
+#section-1 {
+  display: none;
+}
+
+#section-1:target {
+  display: flex;
+}
+
+#section-2 {
+  display: none;
+}
+
+#section-2:target {
+  display: flex;
+}
+
+#section-3 {
+  display: none;
+}
+
+#section-3:target {
+  display: flex;
 }
