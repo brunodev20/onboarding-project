@@ -11,47 +11,21 @@
   <title>Onboarding</title>
 </head>
 
-<body>
+<body onload="starter()">
   <main>
     <!-- ? FIRST -->
     <section id="section-1" class="home__page home__page-one">
       <img src="./img/plant-lover.svg" alt="" class="home__image">
       <h2 class="home__title">Plant lover Community</h2>
       <p class="home__description">Find gardening enthusiasts from all over the world</p>
-      
-      <div class="pagination__home">
-        <a href="#section-1"><div class="pagination__icons page-1 page-active"></div></a>
-        <a href="#section-2"><div class="pagination__icons page-2"></div></a>
-        <a href="#section-3"><div class="pagination__icons page-3"></div></a>
-      </div>
-      
-      <div class="home__page--buttons">
-        <a  class="home__button--green-container" href="#section-2">
-          <button class="home__button--green">Continue</button>
-        </a>
-        <a href="#section-3" class="home__button--skip">Skip</a>
-      </div>
     </section>
     
-
+    
     <!-- ? SECOND -->
     <section id="section-2" class="home__page home__page-two">
       <img src="./img/fast-delivery.svg" alt="" class="home__image">
       <h2 class="home__title">Get fast & safe delivery</h2>
       <p class="home__description">Get good quality products for your plants</p>
-      
-      <div class="pagination__home">
-        <a href="#section-1"><div class="pagination__icons page-1"></div></a>
-        <a href="#section-2"><div class="pagination__icons page-2 page-active"></div></a>
-        <a href="#section-3"><div class="pagination__icons page-3"></div></a>
-      </div>
-      
-      <div class="home__page--buttons">
-        <a class="home__button--green-container" href="#section-3">
-          <button class="home__button--green">Continue</button>
-        </a>
-        <a href="#section-3" class="home__button--skip">Skip</a>
-      </div>
     </section>
     
     
@@ -60,19 +34,29 @@
       <img src="./img/buy-tools.svg" alt="" class="home__image">
       <h2 class="home__title">Buy & Sell Tools</h2>
       <p class="home__description">Buy & sell good quality products for your beautiful plants</p>
+    </section>
+    
+    <!-- ? BUTTONS -->
+    <div class="home__page--buttons">
       
       <div class="pagination__home">
-        <a href="#section-1"><div class="pagination__icons page-1"></div></a>
-        <a href="#section-2"><div class="pagination__icons page-2"></div></a>
-        <a href="#section-3"><div class="pagination__icons page-3 page-active"></div></a>
+        <a href=""><div class="pagination__icons" id="page1"></div></a>
+        <a href=""><div class="pagination__icons" id="page2"></div></a>
+        <a href=""><div class="pagination__icons" id="page3"></div></a>
       </div>
       
-      <div class="home__page--buttons">
-        <a class="home__button--green-container" href="#section-1">
-          <button class="home__button--green home__button--get-started">Get started</button>
-        </a>
-      </div>
-    </section>
+      <a class="home__button--green-container">
+        <button onclick="continueButton()" id="home__button--continue" class="home__button--green">Continue</button>
+      </a>
+      
+      <a id="home__button--skip" class="home__button--skip">Skip</a>
+      
+      <a class="home__button--green-container">
+        <button id="home__button--get-started" class="home__button--green home__button--get-started">Get started</button>
+      </a>
+      
+    </div>
   </main>
+  <script src="./index.js"></script>
 </body>
 </html>
