@@ -76,6 +76,7 @@ main {
 .home__page--buttons .home__button--skip {
   color: #92E3A9;
   text-decoration: none;
+  cursor: pointer;
   font-size: 18px;
   margin-top: 2.3em;
 }/*# sourceMappingURL=styles.css.map */
