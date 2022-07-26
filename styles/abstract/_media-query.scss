@@ -1,5 +1,0 @@
-@mixin main-padding {
-  @media screen and (max-width: 344px) {
-    @content;
-  }
-}
