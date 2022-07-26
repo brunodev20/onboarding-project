@@ -1,0 +1,5 @@
+@mixin padding-320 {
+  @media screen and (max-width: 338px) {
+    @content;
+  }
+}

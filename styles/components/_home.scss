@@ -30,6 +30,11 @@
     
     margin-top: 1.4em;
     margin-bottom: 3.556rem;
+    padding: 0 0.6em;
+
+    @include padding-320 {
+      padding: 0.1em;
+    }
   }
 }
 

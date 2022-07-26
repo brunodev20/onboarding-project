@@ -36,6 +36,12 @@ main {
   color: #000000;
   margin-top: 1.4em;
   margin-bottom: 3.556rem;
+  padding: 0 0.6em;
+}
+@media screen and (max-width: 338px) {
+  .home__page .home__description {
+    padding: 0.1em;
+  }
 }
 
 .home__page--buttons {
